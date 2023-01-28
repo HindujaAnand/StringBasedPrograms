@@ -1,0 +1,27 @@
+package MyStr;
+
+public class Zaarkrapprss
+{
+public static void main(String[] args) 
+{
+	String s="zaarkrapprss";
+	String y="";
+    char c[]=s.toCharArray();
+    for(int i=0;i<=c.length-1;i++)
+    {
+    	for(int j=i+1;j<=c.length-1;j++)
+    	{
+        	if(c[i]==c[j])
+        	{
+        		c[i]=' ';
+        	}
+    	}
+    }
+    for(int i=0;i<=c.length-1;i++)
+    {
+    	if(c[i]!=' ')
+    	 y=y+c[i];
+    }
+    System.out.println(y);
+}
+}
